@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="le_pape" translate="label" sortOrder="1000">
+            <label>Lepape</label>
+        </tab>
+        <section id="lepape" translate="label" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Active user Description</label>
+            <tab>le_pape</tab>
+            <resource>Lepape_Test::test_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="description_login" translate="label comment" type="editor" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Description For logged User</label>
+                    <comment>Description For logged User</comment>
+                    <frontend_model>Lepape\Test\Block\Adminhtml\System\Config\Editor</frontend_model>
+                </field>
+                <field id="description_not_login" translate="label comment" type="editor" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Description For Guest User</label>
+                    <comment>Description For Guest User</comment>
+                    <frontend_model>Lepape\Test\Block\Adminhtml\System\Config\Editor</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

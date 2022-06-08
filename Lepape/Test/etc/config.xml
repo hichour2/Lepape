@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <lepape>
+            <general>
+                <description_login><![CDATA[]]></description_login>
+                <description_not_login><![CDATA[]]></description_not_login>
+            </general>
+        </lepape>
+    </default>
+</config>
